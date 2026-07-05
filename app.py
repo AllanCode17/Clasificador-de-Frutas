@@ -6,8 +6,8 @@ from PIL import Image
 
 st.set_page_config(page_title="Clasificador de Frutas", page_icon="🍎", layout="centered")
 
-st.title("Clasificador de Frutas - Inteligencia_Artificial - Joksan_Zavala_20201900395")
-st.write("Sube una imagen para que el modelo MobileNetV2 identifique a qué categoría pertenece.")
+st.title("Clasificador de Frutas - Inteligencia_Artificial - Allan Manuel Orellana -20211920128")
+st.write("Sube una imagen para que el modelo te ayude a identificar a qué categoría pertenece.")
 
 # ----------------------------
 # CARGAR EL MODELO ENTRENADO
