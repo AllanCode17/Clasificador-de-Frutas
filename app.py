@@ -50,7 +50,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("Clasificador de Frutas - Inteligencia_Artificial - Allan Manuel Orelana Orellna 20211920128")
+st.title("Clasificador de Frutas - Inteligencia_Artificial - Allan Manuel Orelana Orellana 20211920128")
 st.write("Sube una imagen para que el modelo MobileNetV2 identifique a qué categoría pertenece.")
 
 # ----------------------------
