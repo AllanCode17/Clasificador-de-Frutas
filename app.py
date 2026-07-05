@@ -7,42 +7,45 @@ from PIL import Image
 st.set_page_config(page_title="Clasificador de Frutas", page_icon="🍎", layout="centered")
 
 # ==========================================
-# CAMBIO DE APARIENCIA POR CSS (FONDO SUAVE MODO CLARO)
+# CAMBIO DE APARIENCIA POR CSS (NUEVA PALETA DE COLORES)
 # ==========================================
 st.markdown("""
 <style>
-    /* Fondo gris claro suave en lugar de negro */
+    /* Fondo general oscuro satinado */
     .stApp {
-        background-color: #F0F2F5;
+        background-color: #0D1117;
         font-family: 'Inter', system-ui, -apple-system, sans-serif;
     }
     
-    /* Título principal en azul marino profundo para buen contraste */
+    /* Título principal y textos */
     h1 {
-        color: #1E293B !important;
+        color: #FFB300 !important;
         font-weight: 800 !important;
+        text-shadow: 0px 2px 10px rgba(255, 179, 0, 0.2);
     }
     
-    /* Textos secundarios en un tono gris oscuro legible */
     .stMarkdown p, div {
-        color: #475569;
+        color: #C9D1D9;
     }
 
-    /* Caja de subida de archivos en blanco puro con bordes definidos */
+    /* Caja de subida de archivos personalizada */
     div[data-testid="stFileUploader"] {
-        background-color: #FFFFFF !important;
-        border: 2px dashed #CBD5E1 !important;
+        background-color: #161B22 !important;
+        border: 2px dashed #30363D !important;
         border-radius: 12px !important;
         padding: 15px !important;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
     }
     
-    /* Contenedores de alertas estilizados */
+    /* Contenedores de éxito e información refinados */
     .stAlert {
-        background-color: #FFFFFF !important;
+        background-color: #161B22 !important;
         border-radius: 10px !important;
-        border: 1px solid #E2E8F0 !important;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+        border: 1px solid #30363D !important;
+    }
+    
+    /* Asegurar que las alertas de predicción resalten con el tono dorado */
+    div[data-testid="stNotification"] {
+        border-left: 5px solid #FFB300 !important;
     }
 </style>
 """, unsafe_allow_html=True)
