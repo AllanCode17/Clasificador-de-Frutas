@@ -6,6 +6,50 @@ from PIL import Image
 
 st.set_page_config(page_title="Clasificador de Frutas", page_icon="🍎", layout="centered")
 
+# ==========================================
+# CAMBIO DE APARIENCIA POR CSS (NUEVA PALETA DE COLORES)
+# ==========================================
+st.markdown("""
+<style>
+    /* Fondo general oscuro satinado */
+    .stApp {
+        background-color: #0D1117;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+    
+    /* Título principal y textos */
+    h1 {
+        color: #FFB300 !important;
+        font-weight: 800 !important;
+        text-shadow: 0px 2px 10px rgba(255, 179, 0, 0.2);
+    }
+    
+    .stMarkdown p, div {
+        color: #C9D1D9;
+    }
+
+    /* Caja de subida de archivos personalizada */
+    div[data-testid="stFileUploader"] {
+        background-color: #161B22 !important;
+        border: 2px dashed #30363D !important;
+        border-radius: 12px !important;
+        padding: 15px !important;
+    }
+    
+    /* Contenedores de éxito e información refinados */
+    .stAlert {
+        background-color: #161B22 !important;
+        border-radius: 10px !important;
+        border: 1px solid #30363D !important;
+    }
+    
+    /* Asegurar que las alertas de predicción resalten con el tono dorado */
+    div[data-testid="stNotification"] {
+        border-left: 5px solid #FFB300 !important;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.title("Clasificador de Frutas - Inteligencia_Artificial - Allan Manuel Orelana Orellna 20211920128")
 st.write("Sube una imagen para que el modelo MobileNetV2 identifique a qué categoría pertenece.")
 
